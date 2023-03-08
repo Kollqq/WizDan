@@ -5,3 +5,6 @@ c = 5.5
 print(b,c)
 d = 5+3j
 print(d)
+
+e = c+d
+print(e)
