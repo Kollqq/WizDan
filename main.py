@@ -35,10 +35,18 @@ def z6():
     z6s = "Edc"
     z6f = 14.413
     z6 = 5414315
-    fin = "{} {:f} {:X}".format(z6s, z6f, z6)
+    fin = "{} {} {:X}".format(z6s, z6f, z6)
     print(fin)
 
 def z7():
+    lst = ["Voleyball", "Football"]
+    lst_rev = lst[::-1]
+    lst.append("Basketball")
+    print(lst_rev)
+    print(lst)
+
+
+def z8():
     dct = {
         "http": "HyperText Transfer Protocol",
         "url": "Uniform Resource Locator",
@@ -46,7 +54,7 @@ def z7():
         "API": "Application Programming Interface"
     }
     print(dct.items())
-def z8():
+def z9():
     games = {
         "Portal": "The cake is a lie",
         "GTA SA": "Ah shit, here we go again",
@@ -54,7 +62,7 @@ def z8():
     }
     print(len(games))
 
-def z9():
+def z10():
     n = str(input())
     j = 0
     for i in n:
@@ -62,7 +70,7 @@ def z9():
             j += 1
     print(j)
 
-def z10():
+def z11():
     a = int(input("Enter number: "))
     b = int(input("Enter number: "))
     c = int(input("Enter number: "))
@@ -74,11 +82,11 @@ def z10():
     else:
         print(c)
 
-def z11():
+def z12():
     lst = [1, 2, 3, 4, 5, 1.1, 2.2, 3.3, 4.4, 5.5]
     print([i ** 2 for i in lst])
 
-def z12():
+def z13():
     lst = []
     j = 0
     while j != 10:
@@ -88,4 +96,3 @@ def z12():
             lst.append(a)
 
     print(lst)
-
