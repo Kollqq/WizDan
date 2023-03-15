@@ -35,7 +35,11 @@ def z3():
 
 def z4(a,b,c):
 
-    if a**2 + b**2 == c**2:
+    if c > a and c > b and a**2 + b**2 == c**2:
+        return print("Jest")
+    if b > a and b > c and c**2 + a**2 == b**2:
+        return print("Jest")
+    if a > c and a > b and c**2 + b**2 == a**2:
         return print("Jest")
     else:
         return print("Nie jest")
@@ -68,5 +72,3 @@ def z9(a):
         print(math.sqrt(a))
     except:
         print("Error")
-
-z4(3,4,5)
