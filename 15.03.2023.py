@@ -35,13 +35,7 @@ def z3():
 
 def z4(a,b,c):
 
-    if a+b+c > 180:
-        return print("Error")
-    elif a+b == 90 and c == 90:
-        return print("Jest")
-    elif a+c == 90 and b == 90:
-        return print("Jest")
-    elif b+c == 90 and a == 90:
+    if a**2 + b**2 == c**2:
         return print("Jest")
     else:
         return print("Nie jest")
@@ -65,8 +59,8 @@ def z7(*s):
 
 def z8(**spisok):
     s = 0
-    for i in spisok.values():
-        s += i
+    for i in spisok:
+        s += spisok[i]
     return print(len(spisok), s)
 
 def z9(a):
@@ -75,4 +69,4 @@ def z9(a):
     except:
         print("Error")
 
-
+z4(3,4,5)
